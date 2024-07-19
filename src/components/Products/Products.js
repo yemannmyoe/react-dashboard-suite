@@ -2,10 +2,11 @@ import React from 'react';
 import './Product.css';
 import Recommended from '../Recommended/Recommended';
 import Price from './Price/Price';
-import Card from '../Card';
+import Card from '../Card'; 
 
 export default function Products({ result, handleChange, handleClick }) {
   return (
+    
     <div className="h-screen overflow-y-auto p-4">
       <div>
         <Recommended handleClick={handleClick} />
@@ -15,7 +16,7 @@ export default function Products({ result, handleChange, handleClick }) {
         <div className='price-container'>
           <Price handleChange={handleChange} />
         </div>
-
+        
         <section className='card-container'>
           {result.map(product => (
             <Card

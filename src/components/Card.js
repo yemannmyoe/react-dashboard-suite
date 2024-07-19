@@ -1,4 +1,4 @@
-import { AiFillStar } from 'react-icons/ai';
+
 import { BsBagHeartFill } from 'react-icons/bs';
 import React from 'react';
 

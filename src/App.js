@@ -5,6 +5,7 @@ import Layout from './components/shared/Layout';
 import Products from './components/Products/Products';
 import products from './db/data';
 
+
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState(''); // Initialize query state

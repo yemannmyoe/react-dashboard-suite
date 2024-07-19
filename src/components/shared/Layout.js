@@ -8,7 +8,7 @@ export default function Layout({ query, handleSearch }) {
         <div className="flex flex-row bg-neutral-100 h-screen w-screen overflow-hidden">
             <Sidebar />
             <div className="flex-1">
-                <Header query={query} handleSearch={handleSearch} /> {/* Pass props */}
+                <Header query={query} handleSearch={handleSearch} /> 
                 <div className="flex-1 p-4 min-h-0 overflow-auto">
                     <Outlet />
                 </div>
