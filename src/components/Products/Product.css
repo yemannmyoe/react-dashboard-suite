@@ -1,0 +1,61 @@
+
+.main-content {
+  display: flex;
+  gap: 10px; /* Space between price and cards */
+}
+
+
+
+
+.card-container {
+  flex: 7;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between cards */
+}
+  .card {
+    margin: 20px;
+    border: 2px solid #ededed;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .card-img {
+    width: 13rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+  }
+  
+  .card-reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .rating-star {
+    color: #f5c518;
+    margin-right: 4px;
+  }
+  
+  .total-reviews {
+    margin-left: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .bag-icon {
+    color: #ff5722;
+  }
+  

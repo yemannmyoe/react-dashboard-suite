@@ -1,0 +1,33 @@
+/* Recommended.css */
+.recommended-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  
+  .recommended-flex {
+    display: flex;
+    gap: 5px; /* Adjust gap as needed */
+    
+  }
+  
+  .btns {
+    padding: 5px 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: small;
+  }
+  
+  .btns:hover {
+    background-color: #e0e0e0; /* Adjust hover effect as needed */
+  }
+
+  .btns.active {
+    background-color: #007bff; /* Active color */
+    color: white;
+    border-color: #007bff;
+  }
+

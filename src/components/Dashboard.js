@@ -7,7 +7,7 @@ import PropularProducts from './PropularProducts'
 
 export default function Dashboard() {
 	return (
-		<div className="flex flex-col gap-4">
+		<div className="h-screen overflow-y-auto flex flex-col gap-4 p-4">
 			<DashboardGrid />
 			<div className="flex flex-row gap-4 w-full">
 				<TransactionChart />
