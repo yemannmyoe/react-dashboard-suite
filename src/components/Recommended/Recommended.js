@@ -10,7 +10,7 @@ function Recommended({ handleClick, cartCount  }) {
         <h2 className="recommended-title">Recommended</h2>
         <div className="shopping-cart">
           <HiOutlineShoppingCart />
-          <span className='count'>{cartCount}</span>
+          <span className='count'>0</span>
         </div>
       </div>
       <div className="recommended-flex">

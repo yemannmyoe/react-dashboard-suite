@@ -40,7 +40,7 @@ const popularProductsData = [
   {
     id: '4342',
     product_name: 'PUMA BLACK-OCE',
-    product_thumbnail: 'https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jp',
+    product_thumbnail: 'https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg',
     product_price: '$399.00',
     product_stock: 453,
   },
