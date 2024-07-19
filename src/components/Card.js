@@ -2,7 +2,7 @@
 import { BsBagHeartFill } from 'react-icons/bs';
 import React from 'react';
 
-function Card({ img, title, star, reviews, newPrice, prevPrice }) {
+function Card({ img, title, star, reviews, newPrice, prevPrice, addToCart }) {
   return (
     <section className='card'>
       <img src={img} alt={title} className='card-img' />
@@ -17,10 +17,18 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
           <div className='price'>
             {prevPrice && <del>${prevPrice}</del>} ${newPrice}
           </div>
-          <div className='bag'>
-            <BsBagHeartFill className='bag-icon' />
-          </div>
+         
         </section>
+       
+        <div className='bag'>
+        <button className='add-to-cart-button' onClick={() => addToCart({ img, title, newPrice, prevPrice })}>
+          Add to Cart
+                <BsBagHeartFill className='bag-icon' />
+        </button>
+      
+          </div>
+
+        
       </div>
     </section>
   );

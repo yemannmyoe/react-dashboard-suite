@@ -21,6 +21,7 @@
     cursor: pointer;
     flex: 1 1 calc(25% - 10px); 
     box-sizing: border-box; 
+    font-size: 12px;
 
     
   }
@@ -33,6 +34,7 @@
   
   .card-title {
     margin-bottom: 1rem;
+    font-weight: 600;
   }
   
   .card-reviews {
@@ -47,7 +49,7 @@
   }
   
   .total-reviews {
-    margin-left: 8px;
+    margin-left: 7px;
     font-size: 0.9rem;
   }
   
@@ -61,8 +63,24 @@
     font-size: 1.1rem;
     color: #333;
   }
+  .add-to-cart-button {
+    background-color: #a0a0a0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between text and icon */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #4CAF50;
+  }
+  
   .bag-icon {
     color: #ff5722;
-    
   }
   
