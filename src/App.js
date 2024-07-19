@@ -7,11 +7,11 @@ import products from './db/data';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [query] = useState('');
+  const [query, setQuery] = useState(''); // Initialize query state
 
-  // const handleInputChange = (event) => {
-  //   setQuery(event.target.value);
-  // };
+  const handleSearch = (searchQuery) => {
+    setQuery(searchQuery);
+  };
 
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -52,7 +52,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout query={query} handleSearch={handleSearch} />}> {/* Pass props */}
           <Route index element={<Dashboard />} />
           <Route
             path="products"
