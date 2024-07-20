@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Layout from './components/shared/Layout';
 import Products from './components/Products/Products';
+import RecentOrders from './components/RecentOrders'; // Import RecentOrders component
 import products from './db/data';
-
+import TransactionChart from './components/TransactionChart';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -53,7 +54,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout query={query} handleSearch={handleSearch} />}> {/* Pass props */}
+        <Route path="/" element={<Layout query={query} handleSearch={handleSearch} />}>
           <Route index element={<Dashboard />} />
           <Route
             path="products"
@@ -65,6 +66,8 @@ function App() {
               />
             }
           />
+          <Route path="orders" element={<RecentOrders />} />
+          <Route path="transactions" element={<TransactionChart />} />
         </Route>
         <Route path="login" element={<div>this is login page</div>} />
       </Routes>
