@@ -3,14 +3,14 @@ import './Recommended.css';
 import Button from '../Button';
 import { HiOutlineShoppingCart } from 'react-icons/hi2';
 
-function Recommended({ handleClick, cartCount  }) {
+function Recommended({ handleClick, cartCount }) {
   return (
     <div>
       <div className="recommended-container">
         <h2 className="recommended-title">Recommended</h2>
         <div className="shopping-cart">
           <HiOutlineShoppingCart />
-          <span className='count'>0</span>
+          <span className='count'>{cartCount}</span>
         </div>
       </div>
       <div className="recommended-flex">
