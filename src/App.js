@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Layout from './components/shared/Layout';
 import Products from './components/Products/Products';
-import RecentOrders from './components/RecentOrders'; // Import RecentOrders component
+import RecentOrders from './components/RecentOrders'; 
 import products from './db/data';
 import TransactionChart from './components/TransactionChart';
+import Detail from './components/Products/Detail';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [query, setQuery] = useState(''); // Initialize query state
+  const [query, setQuery] = useState(''); 
 
   const handleSearch = (searchQuery) => {
     setQuery(searchQuery);
@@ -66,6 +67,10 @@ function App() {
               />
             }
           />
+
+          <Route path="products/:slug" element={<Detail />} />
+
+
           <Route path="orders" element={<RecentOrders />} />
           <Route path="transactions" element={<TransactionChart />} />
         </Route>

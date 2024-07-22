@@ -1,4 +1,3 @@
-import React from 'react';
 import './Product.css';
 import Recommended from '../Recommended/Recommended';
 import Price from './Price/Price';
@@ -21,12 +20,10 @@ export default function Products({ result, handleChange, handleClick }) {
       <div>
         <Recommended handleClick={handleClick} cartCount={cartCount} />
       </div>
-      
       <div className='main-content'>
         <div className='price-container'>
           <Price handleChange={handleChange} />
         </div>
-        
         <section className='card-container'>
           {result.map(product => (
             <Card
