@@ -31,6 +31,7 @@ export default function Products({ result, handleChange, handleClick }) {
               key={product.id}
               img={product.img}
               title={product.title}
+              slug={product.slug}
               star={product.star}
               reviews={product.reviews}
               prevPrice={product.prevPrice}

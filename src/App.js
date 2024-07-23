@@ -71,6 +71,9 @@ function App() {
           <Route path="products/:slug" element={<Detail />} />
 
 
+    
+
+
           <Route path="orders" element={<RecentOrders />} />
           <Route path="transactions" element={<TransactionChart />} />
         </Route>

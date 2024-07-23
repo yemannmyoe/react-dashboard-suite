@@ -31,7 +31,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'customers',
 		label: 'Customers',
-		path: '/customers',
+		// path: '/customers',
 		icon: <HiOutlineUsers />
 	},
 	{
@@ -43,7 +43,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'messages',
 		label: 'Messages',
-		path: '/messages',
+		// path: '/messages',
 		icon: <HiOutlineAnnotation />
 	}
 ]
