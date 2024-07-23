@@ -8,6 +8,7 @@ import { addToCart as addToCartAction } from '../../stores/cart';
 export default function Products({ result, handleChange, handleClick }) {
   const dispatch = useDispatch();
   const carts = useSelector(state => state.cart.items);
+  const statusTabCart = useSelector(store => store.cart.statusTab);
 
   const addToCart = (product) => {
     dispatch(addToCartAction({ productId: product.id, quantity: 1 }));
@@ -17,7 +18,7 @@ export default function Products({ result, handleChange, handleClick }) {
 
   return (
     <div className="h-[calc(100vh-100px)] overflow-y-auto flex flex-col gap-4 p-4">
-      <div>
+      <div className={`main-container ${statusTabCart ? "shift-left" : ""}`}>
         <Recommended handleClick={handleClick} cartCount={cartCount} />
       </div>
       <div className='main-content'>

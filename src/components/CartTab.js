@@ -14,7 +14,7 @@ const CartTab = () => {
   };
 
   return (
-    <div className={`fixed top-0 right-0  bg-neutral-900 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_55px] 
+    <div className={`fixed top-0 right-0  bg-neutral-900 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_60px] 
       transform transition-transform duration-500 ${statusTab ? "translate-x-0" : "translate-x-full"}`}>
       <h2 className='p-5 text-white text-2xl'>Shopping Cart</h2>
 
